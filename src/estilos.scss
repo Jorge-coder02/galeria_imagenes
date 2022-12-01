@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+// Container principal
+.container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    // Título principal
+    h1 {
+        text-align: center;
+    }
+    // Botones principales
+    .botones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        input {
+            padding: .5rem 1.4rem;
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        #anadir{
+            color: white;
+            background-color: blue;
+        }
+        #anadir:hover {
+            background-color: rgb(67, 67, 224);
+        }
+    }
+    // Desplegable al clicar en 'Añadir imagen'
+    #div_input {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        // Inputs (texto)
+        #titulo {
+            padding: 1rem;
+            width: 280px;
+            height: 25px;
+        }
+        #url {
+            padding: 1rem;
+            width: 280px;
+            height: 25px;
+        }
+        // Input botón
+        #aceptar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .8rem 2.5rem;
+        }
+    }
+    // Desplegable al clickar 'Editar imagen'
+    #confirmar {
+        padding: .5rem 1.4rem;
+    }
+    #confirmar:hover {
+        cursor: pointer;
+    }
+    // DIV imágenes
+    #album {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        // Div de cada imagen
+        .contenedor_imagen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            // Título imagen
+            .input_cambiar {
+                text-align: center;
+            }
+            span {
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+            img {
+                width: 250px;
+                height: 300px;
+            }
+            .casilla {
+                width: 15px;
+                height: 15px;
+            }
+            .casilla:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
